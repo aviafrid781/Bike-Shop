@@ -1,0 +1,14 @@
+.add-reviews form
+{
+ display:flex ;
+ flex-direction: column;
+ margin-top: 6%;
+bottom: 50px;
+ justify-content: center;
+ align-items: center;
+}
+.add-reviews form input,textarea{
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+.fgq
+{
+    margin:40px;
+    background-color: goldenrod;
+    border: 1px solid gold;
+    border-radius: 10px;
+    
+}
+.fgq-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+heading-name p
+{
+    background-color: gold;
+}
+@media only screen and (max-width:600px)  {
+    .fgq-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+    
+}

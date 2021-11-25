@@ -1,0 +1,15 @@
+.footer{
+    
+padding-top: 50vh;
+background-color:seagreen;
+padding: 10px; 
+margin-bottom: 10px;  
+    
+    
+}
+
+.footer-text{
+    color:black;
+    font-size: 1em;
+    font-weight: 400;
+}
