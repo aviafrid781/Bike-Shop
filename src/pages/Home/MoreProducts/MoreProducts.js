@@ -9,7 +9,7 @@ const MoreProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://fathomless-bastion-71123.herokuapp.com/products')
+        fetch('https://bike-shops-server-2wvg.vercel.app/products')
             .then(res => res.json())
             .then(data => setProducts(data));
 
