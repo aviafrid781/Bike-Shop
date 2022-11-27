@@ -11,7 +11,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://fathomless-bastion-71123.herokuapp.com/reviews')
+        fetch('https://bike-shops-server-2wvg.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
 
