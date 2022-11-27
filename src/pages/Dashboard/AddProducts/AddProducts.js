@@ -11,7 +11,7 @@ const AddProducts = () => {
         console.log(data);
         //use axios for post API
 
-        axios.post('https://fathomless-bastion-71123.herokuapp.com/products', data)
+        axios.post('https://bike-shops-server-2wvg.vercel.app/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added Successfully');

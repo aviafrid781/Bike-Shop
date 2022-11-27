@@ -13,7 +13,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://fathomless-bastion-71123.herokuapp.com/users/admin', {
+        fetch('https://bike-shops-server-2wvg.vercel.app/users/admin', {
             method: 'PUT',
             headers: {
 

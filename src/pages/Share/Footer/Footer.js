@@ -5,21 +5,17 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
-
 const footer = {
     backgroundColor: '#3498DB ',
     width: '100%',
     color: 'white',
-    // height:'40vh',
     marginTop: '20px',
-    // marginBottom:'10px'
     padding: '2%'
 }
 const Footer = () => {
     return (
         <Box style={footer} sx={{ flexGrow: 1 }}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
                 <Grid item xs={12} sm={12} md={3} >
                     <div>
                         <h5>Main office:</h5>
@@ -27,9 +23,7 @@ const Footer = () => {
                         <p>Phone :+9484875873</p>
                         <p>Email: bikeShop@gmail.com</p>
                     </div>
-
                 </Grid>
-
 
                 <Grid item xs={12} sm={12} md={3} >
                     <div>
@@ -49,25 +43,6 @@ const Footer = () => {
                         <p>Benefits</p>
                     </div>
                 </Grid>
-
-                {/* <Grid item xs={12} sm={12} md={3} >
-                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <div>
-                            <h5>follow us</h5>
-                            <p>FaceBook</p>
-                            <p>Twitter</p>
-                            <p>WhatsApp</p>
-                            <p>Instragram</p>
-                        </div>
-
-
-                    </Box>
-
-
-
-
-                </Grid> */}
-
             </Grid>
         </Box >
     );

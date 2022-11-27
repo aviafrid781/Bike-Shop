@@ -14,7 +14,7 @@ const Booking = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`https://fathomless-bastion-71123.herokuapp.com/topProducts/${productId}`)
+        fetch(`https://bike-shops-server-2wvg.vercel.app/topProducts/${productId}`)
 
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -28,7 +28,7 @@ const Booking = () => {
         console.log(data);
         //use axios for post API
 
-        axios.post('https://fathomless-bastion-71123.herokuapp.com/orders', data)
+        axios.post('https://bike-shops-server-2wvg.vercel.app/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Booking Successfully Complate');

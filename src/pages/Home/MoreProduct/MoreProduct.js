@@ -27,17 +27,12 @@ const MoreProduct = ({ product }) => {
                     <Typography variant="h5" component="div">
                         Price : ${price}
                     </Typography>
-
-
                     <Typography variant="body2" color="text.secondary">
                         {description}
                     </Typography>
                     <Link to={`/moreBooking/${_id}`}>
                         <Button variant="warning">Perchase</Button>{' '}
-
                     </Link>
-
-
                 </CardContent>
 
             </Card>

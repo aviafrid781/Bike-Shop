@@ -8,14 +8,14 @@ const MyOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch("https://fathomless-bastion-71123.herokuapp.com/orders")
+        fetch("https://bike-shops-server-2wvg.vercel.app/orders")
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
 
     const matchOrders = orders.filter(order => order.email === user.email)
     const handelDelete = (id) => {
-        const url = `https://fathomless-bastion-71123.herokuapp.com/orders/${id}`;
+        const url = `https://bike-shops-server-2wvg.vercel.app/orders/${id}`;
         fetch(url, {
             method: "DELETE"
         })

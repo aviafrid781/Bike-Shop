@@ -8,11 +8,9 @@ import Footer from '../../Share/Footer/Footer';
 const Home = () => {
     return (
         <div>
-
             <Banner></Banner>
             <TopProducts></TopProducts>
             <FAQ></FAQ>
-
             <Reviews></Reviews>
             <Footer></Footer>
         </div>

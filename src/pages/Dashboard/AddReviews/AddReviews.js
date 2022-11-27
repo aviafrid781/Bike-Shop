@@ -12,7 +12,7 @@ const AddReviews = () => {
         console.log(data);
         //use axios for post API
 
-        axios.post('https://fathomless-bastion-71123.herokuapp.com/reviews', data)
+        axios.post('https://bike-shops-server-2wvg.vercel.app/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added Successfully');

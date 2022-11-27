@@ -5,14 +5,14 @@ const ManageProducts = () => {
     const [manageProducts, setManageProducts] = useState([]);
 
     useEffect(() => {
-        fetch("https://fathomless-bastion-71123.herokuapp.com/products")
+        fetch("https://bike-shops-server-2wvg.vercel.app/products")
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, [])
 
 
     const handelDelete = (id) => {
-        const url = `https://fathomless-bastion-71123.herokuapp.com/products/${id}`;
+        const url = `https://bike-shops-server-2wvg.vercel.app/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })

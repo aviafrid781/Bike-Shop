@@ -16,9 +16,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
 import { Button } from '@mui/material';
-//import { Link } from 'react-router-dom';
 import {
     Switch,
     Route,
@@ -34,9 +32,7 @@ import ManageOrder from '../ManageOrder/ManageOrder';
 import AddProdducts from '../AddProducts/AddProducts'
 import AdminRoute from '../../Login/AdminRoute/AdminRoute'
 import Payment from '../Payment/Payment';
-import PrivateRoute from '../../Login/PrivateRoute/PrivateRoute';
 const drawerWidth = 200;
-
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -147,10 +143,6 @@ function Dashboard(props) {
                 <Toolbar />
 
                 <Switch>
-                    {/* <Route exact path={path}>
-                        
-                    </Route> */}
-
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
                     </AdminRoute>
@@ -164,9 +156,6 @@ function Dashboard(props) {
                     <AdminRoute path={`${path}/manageProducts`}>
                         <ManageProducts></ManageProducts>
                     </AdminRoute>
-
-
-
                     <Route path={`${path}/payment`}>
                         <Payment></Payment>
                     </Route>
@@ -177,9 +166,6 @@ function Dashboard(props) {
                         <AddReviews></AddReviews>
                     </Route>
 
-
-
-
                 </Switch>
 
             </Box>
@@ -188,10 +174,7 @@ function Dashboard(props) {
 }
 
 Dashboard.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
+    
     window: PropTypes.func,
 };
 

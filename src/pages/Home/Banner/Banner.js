@@ -8,12 +8,8 @@ const Banner = () => {
             <div class="hero-text">
                 <h1>Welcome To <span className="site_name">Bike Shop</span></h1>
                 <p>Your Dreams, Near of your hands</p>
-
             </div>
         </div>
-
-
-
     );
 };
 

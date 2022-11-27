@@ -37,11 +37,6 @@ const TopProducts = () => {
                                 topProduct={topProduct}
 
                             ></TopProduct>
-
-
-
-
-
                             )
                         }
 

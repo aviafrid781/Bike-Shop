@@ -9,14 +9,14 @@ const ManageOrder = () => {
     const [manageOrders, setManageOrders] = useState([]);
 
     useEffect(() => {
-        fetch("https://fathomless-bastion-71123.herokuapp.com/orders")
+        fetch("https://bike-shops-server-2wvg.vercel.app/orders")
             .then(res => res.json())
             .then(data => setManageOrders(data))
     }, [])
 
 
     const handelDelete = (id) => {
-        const url = `https://fathomless-bastion-71123.herokuapp.com/orders/${id}`;
+        const url = `https://bike-shops-server-2wvg.vercel.app/orders/${id}`;
         fetch(url, {
             method: "DELETE"
         })

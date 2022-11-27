@@ -15,8 +15,7 @@ const Register = () => {
         const value = e.target.value;
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
-        // console.log(field, value, newLoginData);
-        setLogindata(newLoginData);
+         setLogindata(newLoginData);
 
     }
     const handleLoginSubmit = e => {
@@ -25,12 +24,8 @@ const Register = () => {
             return;
         }
 
-        //console.log(loginData.email, loginData.password)
-
-
         registerUser(loginData.email, loginData.password, loginData.name, history)
-        //alert('Successfully Registered');
-
+    
         e.preventDefault();
 
     }
