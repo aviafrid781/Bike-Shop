@@ -14,7 +14,7 @@ const TopProducts = () => {
     const [topProducts, setTopProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://fathomless-bastion-71123.herokuapp.com/topProducts')
+        fetch('https://bike-shops-server-2wvg.vercel.app/topProducts')
             .then(res => res.json())
             .then(data => setTopProducts(data));
 
